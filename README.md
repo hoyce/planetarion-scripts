@@ -1,2 +1,5 @@
-# planetarion-tampermonkey
-A TamperMonkey script that add style to menus and titles to make it easier to navigate etc.
+# Planetarion TamperMonkey style script
+This script improves the default style in Planetarion:
+- Adding a blue color and bold text on active menu items.
+- Set short titles in browser tabs so you get a good overview of which PA page you have in each tab.
+- Improves the Battle Calculator page with better contrast and remove some stats.
