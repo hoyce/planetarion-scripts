@@ -3,7 +3,7 @@
 // @namespace    http://www.hoyce.com/
 // @version      1.0
 // @description  A user script that style and make the interface of Planetarion a more user friendly
-// @match 	     http://game.planetarion.com/*
+// @match        http://game.planetarion.com/*
 // @author       Hoyce
 // @require      http://code.jquery.com/jquery-latest.js
 // @grant        none
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     function setGeneralStyle() {
         $('.tab_link').css('color','#ffffff');
-      $('.tab_link.tab_link_active').css('color','#47b4fa');
+        $('.tab_link.tab_link_active').css('color','#47b4fa');
     }
 
     function resetMenuLinks() {
@@ -148,6 +148,9 @@ $(document).ready(function() {
         }
     }
 
+    /*
+     * Run the script 
+     */
     setGeneralStyle();
     resetMenuLinks();
     setSelectedMenuItem();
