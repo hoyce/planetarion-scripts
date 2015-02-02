@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Planetarion style script
 // @namespace    http://www.hoyce.com/
-// @version      1.0
+// @version      1.1
 // @description  A user script that style and make the interface of Planetarion a more user friendly
 // @match 	     http://game.planetarion.com/*
 // @author       Hoyce
@@ -14,6 +14,10 @@ $(document).ready(function() {
   function setGeneralStyle() {
     $('.tab_link').css('color','#ffffff');
     $('.tab_link.tab_link_active').css('color','#47b4fa');
+
+    $('.tab_link').on('click', function() {
+      setGeneralStyle();
+    });
   }
 
   function resetMenuLinks() {
