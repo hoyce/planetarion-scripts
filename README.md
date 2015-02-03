@@ -10,3 +10,8 @@ This script improves the default style in browser based game <a href="http://www
 - Setting short titles in browser tabs so you get a good overview of which PA page you have in each tab.
 - Improves the Battle Calculator page with better contrast and remove some unnecessary stats.
 
+##How to install##
+- Activate your monkey script depending on which browser you use.
+- Add a new script and paste the code from planetarion-tm.js (for Chrome/Safari/Opera) or planetarion-gm.js (for Firefox)
+- Go to Planetarion and make use of the new small features :)
+
