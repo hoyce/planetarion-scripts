@@ -93,7 +93,7 @@ $(document).ready(function() {
             setActiveLink('li#menu_galaxy a');
             setTitle('Galaxy');
         }
-        if(window.location.href.indexOf("alliance.pl") > 0) {
+        if(window.location.href.indexOf("alliance") > 0) {
             setActiveLink('li#menu_alliance a');
             setTitle('Alliance');
         }
