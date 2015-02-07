@@ -1,29 +1,41 @@
 /* * * * PA Theme 2015 * * * */
-html body {
-  background: none;
-}
 
 /* Left menu */
 #menu {
   float: left;
   width: 20%;
+  border: 1px solid;
 }
 
 /* Left menu */
 #header {
   float: right;
   width: 20%;
+  border: 1px solid;
 }
 
 #planet_summary {
   float: right;
   width: 20%;
+  border: 1px solid;
+  clear: right;
 }
 
-.pages {
-
+.maintext {
+  float: left;
+  width: 56%;
 }
 
 #top {
+  height: 40px;
+  border: 1px solid;
+}
 
+#top #tnav ul#tnav_links {
+  list-style-type: none;
+}
+
+#top #tnav ul#tnav_links li.tnav_link {
+  float: left;
+  margin-right: 10px;
 }
