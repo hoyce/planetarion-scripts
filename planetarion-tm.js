@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Planetarion style script
 // @namespace    http://www.hoyce.com/
-// @version      1.2
+// @version      1.2.1
 // @description  A user script that style and make the interface of Planetarion a more user friendly
 // @match 	     http://game.planetarion.com/*
 // @author       Hoyce
@@ -83,12 +83,24 @@ $(document).ready(function() {
             setActiveLink('li#menu_waves a');
             setTitle('Waves');
         }
-        if(window.location.href.indexOf("covert.pl") > 0) {
+        if(window.location.href.indexOf("covert.pl?rn") > 0) {
             setActiveLink('li#menu_covert_ops a');
+            setActiveLink('.maintext a[href*="covert.pl?rn"]');
+            setTitle('Covert Ops');
+        }
+        if(window.location.href.indexOf("covert.pl?mode") > 0) {
+            setActiveLink('li#menu_covert_ops a');
+            setActiveLink('.maintext a[href*="covert.pl?mode=hr"]');
             setTitle('Covert Ops');
         }
         if(window.location.href.indexOf("production.pl") > 0) {
             setActiveLink('li#menu_production a');
+            setActiveLink('.maintext a[href*="production.pl"]');
+            setTitle('Production');
+        }
+        if(window.location.href.indexOf("sell_ships.pl") > 0) {
+            setActiveLink('li#menu_production a');
+            setActiveLink('.maintext a[href*="sell_ships.pl"]');
             setTitle('Production');
         }
         if(window.location.href.indexOf("fleets.pl") > 0) {
@@ -186,7 +198,6 @@ $(document).ready(function() {
             setTitle('Portal');
         }
         if(window.location.href.indexOf("preferences.pl") > 0) {
-            alert('hej');
             setActiveLink('ul#menu li#menu_preferences a');
             setTitle('Preferences');
         }
